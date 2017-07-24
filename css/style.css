@@ -45,6 +45,10 @@ img {
     overflow:hidden;
     padding-left:30px;
     clear:both;
+    -webkit-transition:0.5s ease-in;
+    -moz-transition:0.5s ease-in;
+    -o-transition:0.5s ease-in;
+    transition:0.5s ease-in;
 }
 
 .vitrine-wrapper .produtos li {
@@ -105,8 +109,9 @@ img {
     letter-spacing: -0.31px;
 }
 
-.produtos-pagamento .pagamento-parcelamento .juros {
+.produtos-pagamento .pagamento-parcelamento strong {
     color: #6f0306;
+    font-size: 16px;
 }
 
 .produtos-pagamento .pagamento-de strong {
@@ -196,7 +201,7 @@ img {
 
 .produto-recomendacao .lista-produto{
     float:left;
-    width:79%;
+    width:70%;
     margin-left: 20px;
 }
 
@@ -291,4 +296,5 @@ img {
 
 @media screen and (max-device-width: 640px){
 
+    /** todo **/
 }
