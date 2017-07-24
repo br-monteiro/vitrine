@@ -7,8 +7,50 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="description" content="">
         <meta name="author" content="Bruno Monteiro">
+        <link href="css/style.css" rel="stylesheet">
     </head>
     <body>
+        <div class="vitrine-wrapper-auto produto-recomendacao">
+            <h2 class="title">Você Visitou <span>e talvez se interesse por</span></h2>
 
+            <div class="item-referencia vitrine-wrapper" id="produtoReferenciaView"></div>
+
+            <div class="lista-produto vitrine-wrapper">
+                <div class="slider">
+
+                    <div class="previous-slide" onclick="sliderController.previousSlide()">
+                        <<
+                    </div>
+                    <div class="next-slide" onclick="sliderController.nextSlide()">
+                        >>
+                    </div>
+
+                    <div class="content-slider" id="contentSliderView">
+                        <ul class="produtos"></ul>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <script src="js/Helpers/LoadApiHelper.js"></script>
+        <script src="js/Helpers/ExecuteResponseHelper.js"></script>
+        <script src="js/Controllers/FrontController.js"></script>
+        <script src="js/Controllers/ItemReferenceController.js"></script>
+        <script src="js/Views/ItemReferenceView.js"></script>
+        <script src="js/Controllers/ItensSlideController.js"></script>
+        <script src="js/Views/ItensSlideView.js"></script>
+        <script src="js/Controllers/SliderController.js"></script>
+        <script>
+            var sliderController = {};
+            
+            function X(objeto) {
+                // executa a aplicaçao
+               let frontController = new FrontController(objeto);
+               sliderController = frontController.getInstanceOfSliderController();
+            }
+            
+            new LoadApiHelper('http://localhost:8000/');
+        </script>
     </body>
 </html>
