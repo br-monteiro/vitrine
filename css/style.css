@@ -166,7 +166,7 @@ img {
 }
 
 .produto-recomendacao {
-    width:45%;
+    width:80%;
     float:left;
 }
 
@@ -186,8 +186,8 @@ img {
     padding-bottom: 4px;
     font-weight: bold;
     color: #0096db;
-    width: 81%;
-    margin-left: 10%;
+    width: 60%;
+    margin-left: 105px;
     display: inline-block;
     border-bottom: 3px solid #0096db;
     text-align: left;
@@ -201,12 +201,13 @@ img {
 
 .produto-recomendacao .lista-produto{
     float:left;
-    width:70%;
-    margin-left: 20px;
+    width:100%;
+    margin-left: 210px;
+    margin-top: -465px;
 }
 
 .vitrine-wrapper-auto{
-    position:relative;
+    margin: 0px auto;
 }
 
 /* slider de produtos */ 
@@ -243,7 +244,7 @@ img {
 }
 
 .vitrine-wrapper .produto-container .produto-imagem img {
-    width: 212px;
+    width: 80%;
     height: 212px;
 }
 
